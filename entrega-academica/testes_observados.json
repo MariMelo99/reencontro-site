@@ -1,0 +1,33 @@
+{
+  "observacao": "Registro manual parcial; não é conjunto de teste independente. Saídas completas não incluídas neste arquivo.",
+  "casos": [
+    {
+      "id": "manual_01",
+      "pergunta": "Qual é o objetivo do Reencontro",
+      "ambiente": "Space e site",
+      "observado": "Resposta sobre finalidade com evidência produto_001 e validação formal aprovada",
+      "tipo": "teste manual observado"
+    },
+    {
+      "id": "manual_02",
+      "pergunta": "Qual é o objetivo do Reencontro?",
+      "ambiente": "site antes e durante ajustes",
+      "observado": "Recusa indevida: informação não consta",
+      "tipo": "teste manual observado"
+    },
+    {
+      "id": "manual_03",
+      "pergunta": "Qual é o objetivo do Reencontro?",
+      "ambiente": "API Gradio após normalização",
+      "observado": "Resposta com evidência produto_001 e validação formal aprovada",
+      "tipo": "teste manual observado"
+    },
+    {
+      "id": "manual_04",
+      "pergunta": null,
+      "ambiente": "ZeroGPU",
+      "observado": "Bloqueio por limite de uso gratuito",
+      "tipo": "evento operacional"
+    }
+  ]
+}
