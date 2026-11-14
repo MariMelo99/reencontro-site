@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reencontro. Protótipo acadêmico para consulta e triagem de casos fictícios de desaparecimento.">
+  <title>Reencontro | CitizenTech FIAP</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/casos.js"></script>
+  <script defer src="foto.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="foto-ui.js"></script>
+
+  <style>
+    .reencontro-ia{margin:24px 0;padding:22px;border:1px solid #d8c9e5;border-radius:14px;background:#fffdf3;color:#302638}
+    .reencontro-ia h2{margin:0 0 8px;font-size:1.5rem}
+    .reencontro-ia p{max-width:78ch}
+    .reencontro-ia label{display:block;font-weight:700;margin-bottom:6px}
+    .reencontro-ia textarea{display:block;width:100%;padding:12px;border:1px solid #947ca6;border-radius:8px;font:inherit;color:#302638;background:#fff;resize:vertical}
+    .reencontro-ia textarea:focus-visible{outline:3px solid #79579b;outline-offset:3px}
+    .reencontro-ia__acoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .reencontro-ia button{background:#624478;color:#fff;padding:10px 16px;min-height:44px;border:1px solid #624478;border-radius:8px}
+    .reencontro-ia button[type=button]{background:#fff;color:#624478}
+    .reencontro-ia button:disabled{opacity:.6;cursor:wait}
+    .reencontro-ia__status{min-height:1.55em;font-size:.92rem}
+    .reencontro-ia__resultado{padding:16px;border:1px solid #ddd0e6;border-radius:10px;background:#fff}
+    .reencontro-ia__resultado h3{margin:0 0 8px;font-size:1.12rem}
+    .reencontro-ia__resposta,.reencontro-ia blockquote{white-space:pre-wrap;overflow-wrap:anywhere}
+    .reencontro-ia blockquote{margin:8px 0;padding-left:12px;border-left:3px solid #bfa6cc;font-size:.95rem}
+    .reencontro-ia li{margin-bottom:14px}
+    .reencontro-ia a{color:#624478;text-decoration:underline}
+    .reencontro-ia__aviso{font-size:.86rem;color:#5b4b63}
+    @media(max-width:580px){.reencontro-ia{padding:16px}.reencontro-ia__acoes button{width:100%}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#principal">Pular para o conteúdo</a>
+  <header class="top"><div class="shell top-inner">
+    <a class="brand" href="#consulta" aria-label="Reencontro, consulta de casos"><span class="mark" aria-hidden="true">R</span><span>Reencontro<small>CITIZENTECH · FIAP</small></span></a>
+    <nav aria-label="Navegação principal"><a href="#consulta">Consulta</a><a href="#revisao">Fila de revisão</a><a href="#indicadores">Indicadores</a></nav>
+  </div></header>
+  <main id="principal" class="shell" tabindex="-1">
+    <section id="consulta" data-page>
+      <div class="hero">
+        <div class="hero-copy"><p class="eyebrow">ACOLHIMENTO E TRIAGEM</p><h1>Quem você está procurando?</h1><p>Comece com o que você tem: um nome, algumas características ou uma foto.</p><button id="open-demo" type="button" class="quiet">Ver exemplo de um caso <span aria-hidden="true">↗</span></button></div>
+        <div id="hero-case" class="hero-case"></div>
+      </div>
+
+      <section class="reencontro-ia" aria-labelledby="ia-titulo">
+        <p class="eyebrow">ASSISTENTE REENCONTRO</p>
+        <h2 id="ia-titulo">Como podemos orientar você?</h2>
+        <p>Faça uma pergunta sobre o protótipo ou as orientações disponíveis. Quando houver uma resposta, você poderá conferir os trechos utilizados.</p>
+        <p class="reencontro-ia__aviso">Demonstração acadêmica. Use perguntas fictícias, sem nomes, telefones ou outros dados pessoais. A IA pode errar, mesmo quando apresenta uma fonte.</p>
+        <form id="ia-form">
+          <label for="ia-pergunta">Sua pergunta</label>
+          <textarea id="ia-pergunta" rows="3" minlength="3" maxlength="600" required autocomplete="off" placeholder="Ex.: Quantos registros fictícios existem no protótipo?" aria-describedby="ia-limite"></textarea>
+          <small id="ia-limite">Entre 3 e 600 caracteres. Cada pergunta é consultada separadamente.</small>
+          <div class="reencontro-ia__acoes">
+            <button id="ia-enviar" type="submit">Enviar pergunta</button>
+            <button id="ia-limpar" type="button">Limpar consulta</button>
+          </div>
+        </form>
+        <p id="ia-status" class="reencontro-ia__status" role="status" aria-live="polite"></p>
+        <div id="ia-resultado" class="reencontro-ia__resultado" aria-busy="false" hidden>
+          <h3 id="ia-resultado-titulo">Resposta do assistente</h3>
+          <p id="ia-resposta" class="reencontro-ia__resposta"></p>
+          <div id="ia-fontes" hidden><h3>Trechos utilizados</h3><ul id="ia-evidencias"></ul></div>
+          <p class="reencontro-ia__aviso">A conferência automática verifica o formato e a presença literal das citações. A pertinência e o sentido da resposta exigem conferência humana.</p>
+        </div>
+      </section>
+      <div class="section-heading"><div><p class="eyebrow">BASE DE DEMONSTRAÇÃO</p><h2>Como você quer buscar?</h2></div><span class="pill">São Paulo · SP</span></div>
+      <div class="search-modes" aria-label="Modo de busca"><button id="mode-description" type="button" aria-pressed="true" aria-controls="description-panel">Nome ou características</button><button id="mode-photo" type="button" aria-pressed="false" aria-controls="photo-panel">Buscar por foto</button></div>
+      <div id="description-panel">
+      <form id="filters" class="filters" role="search">
+        <label class="query">Nome, bairro ou idade<input id="query" type="search" placeholder="Ex.: Ana, Santana ou 8 anos" autocomplete="off"></label>
+        <label>Ano<select id="year"><option value="">Todos os anos</option></select></label>
+        <label>Zona<select id="zone"><option value="">Todas as zonas</option></select></label>
+        <label>Idade na época<select id="age"><option value="">Todas as idades</option><option value="child">2 a 11 anos</option><option value="teen">12 a 17 anos</option></select></label>
+        <label>Altura aproximada na época (cm)<input id="height" type="number" min="40" max="230" placeholder="Ex.: 130" inputmode="numeric"></label>
+        <label>Sexo no registro<select id="sex"><option value="">Qualquer</option><option>Feminino</option><option>Masculino</option></select></label>
+        <button type="reset" class="quiet">Limpar</button>
+      </form>
+      <p id="result-count" class="results" role="status"></p>
+      <div id="case-list" class="case-grid"></div>
+      <div class="pagination"><button id="prev" type="button" class="quiet">Anterior</button><span id="page-number"></span><button id="next" type="button" class="quiet">Próxima</button></div>
+      </div>
+      <section id="photo-panel" class="photo-panel" aria-labelledby="photo-title" hidden>
+        <h3 id="photo-title">Buscar com uma foto</h3>
+        <p>Escolha uma imagem ou use a câmera para enquadrar uma foto impressa ou exibida em outro celular. Nesta demonstração, use apenas fotos fictícias. A imagem de consulta fica no navegador durante a busca.</p>
+        <div class="photo-actions"><label class="file-choice">Escolher foto<input id="photo-file" type="file" accept="image/*"></label><button id="open-camera" type="button" class="quiet">Usar câmera</button></div>
+        <div class="sample-actions"><span>Quer testar agora?</span><button id="sample-match" type="button" class="quiet">Foto de um caso fictício</button><button id="sample-miss" type="button" class="quiet">Imagem de teste sem par</button></div>
+        <div id="photo-preview" class="photo-preview" hidden><img id="query-image" alt="Imagem escolhida para comparação"><div><strong>Imagem selecionada</strong><p>Confira o enquadramento antes de buscar.</p><button id="run-scan" type="button">Buscar imagens semelhantes</button><button id="clear-photo" type="button" class="quiet">Remover foto</button></div></div>
+        <p id="photo-status" class="notice" role="status"></p><div id="photo-results"></div>
+      </section>
+    </section>
+    <section id="revisao" data-page hidden>
+      <div class="page-intro"><p class="eyebrow">TRIAGEM SIMULADA</p><h1>Fila de revisão</h1><p>Confira as informações de teste registradas neste navegador e simule a revisão por um atendente.</p></div>
+      <div id="queue" class="queue"></div>
+    </section>
+    <section id="indicadores" data-page hidden>
+      <div class="page-intro"><p class="eyebrow">BUSINESS INTELLIGENCE</p><h1>Painel da demonstração</h1><p>Indicadores da base fictícia e dos protocolos simulados neste navegador.</p></div>
+      <div id="metrics" class="metrics"></div>
+      <div class="chart-grid"><article class="chart"><h2>Casos por ano</h2><div id="by-year"></div></article><article class="chart"><h2>Casos por zona</h2><div id="by-zone"></div></article></div>
+    </section>
+  </main>
+  <footer class="shell footer"><strong>Reencontro</strong><p>Protótipo acadêmico com dados e imagens fictícios. Para casos reais, consulte os canais oficiais.</p></footer>
+  <dialog id="case-dialog" aria-labelledby="case-title">
+    <div class="dialog-top"><span class="eyebrow">FICHA SIMULADA</span><button id="close-dialog" class="quiet" type="button" aria-label="Fechar ficha">Fechar ×</button></div>
+    <div id="case-detail"></div>
+  </dialog>
+  <dialog id="camera-dialog" aria-labelledby="camera-title">
+    <div class="dialog-top"><h2 id="camera-title" class="dialog-title">Enquadrar a foto</h2><button id="close-camera" type="button" class="quiet">Fechar ×</button></div>
+    <p class="notice">Mostre só a foto dentro da moldura. Evite reflexos e incline o mínimo possível.</p>
+    <div class="camera-stage"><video id="camera-video" playsinline muted></video><div class="camera-frame" aria-hidden="true"></div></div>
+    <p id="camera-status" class="notice" role="status"></p><button id="capture-photo" type="button" disabled>Capturar imagem</button>
+  </dialog>
+  <dialog id="intake-dialog" aria-labelledby="intake-title">
+    <div class="dialog-top"><h2 id="intake-title" class="dialog-title">Solicitar cadastro</h2><button id="close-intake" type="button" class="quiet">Fechar ×</button></div>
+    <p class="notice">Use dados inventados. O pedido fica na fila simulada e a foto da busca não é anexada.</p>
+    <form id="intake-form" class="intake-form"><label>Nome fictício<input id="intake-name" maxlength="80" required autocomplete="off"></label><label>Idade aproximada<input id="intake-age" type="number" min="0" max="120" required></label><label>Zona<select id="intake-zone" required><option value="">Selecione</option><option>Centro</option><option>Leste</option><option>Norte</option><option>Oeste</option><option>Sul</option><option>Não sei</option></select></label><button type="submit">Enviar cadastro de teste para revisão</button></form>
+    <p id="intake-result" class="toast-inline" role="status"></p>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript>Ative o JavaScript para consultar a base fictícia.</noscript>
+  <script>
+
+(() => {
+  "use strict";
+  const form = document.getElementById("ia-form");
+  const pergunta = document.getElementById("ia-pergunta");
+  const enviar = document.getElementById("ia-enviar");
+  const limpar = document.getElementById("ia-limpar");
+  const status = document.getElementById("ia-status");
+  const resultado = document.getElementById("ia-resultado");
+  const titulo = document.getElementById("ia-resultado-titulo");
+  const resposta = document.getElementById("ia-resposta");
+  const fontes = document.getElementById("ia-fontes");
+  const evidencias = document.getElementById("ia-evidencias");
+  let processando = false;
+
+  function apagarResultado() {
+    resultado.hidden = true;
+    resposta.textContent = "";
+    evidencias.replaceChildren();
+    fontes.hidden = true;
+    status.textContent = "";
+  }
+
+  limpar.addEventListener("click", () => {
+    if (processando) return;
+    pergunta.value = "";
+    apagarResultado();
+    pergunta.focus();
+  });
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (processando) return;
+    pergunta.setCustomValidity("");
+    const texto = pergunta.value.trim();
+    if (texto.length < 3 || texto.length > 600) {
+      pergunta.setCustomValidity("Escreva uma pergunta entre 3 e 600 caracteres.");
+      pergunta.reportValidity();
+      return;
+    }
+    if (location.protocol === "file:") {
+      status.textContent = "Abra o site em http://127.0.0.1:5500 para conectar o assistente.";
+      return;
+    }
+    processando = true;
+    apagarResultado();
+    enviar.disabled = true;
+    limpar.disabled = true;
+    pergunta.readOnly = true;
+    resultado.setAttribute("aria-busy", "true");
+    status.textContent = "Consultando as orientações. Aguarde a resposta...";
+    const controlador = new AbortController();
+    const temporizador = setTimeout(() => controlador.abort(), 120000);
+    try {
+      const http = await fetch("http://127.0.0.1:8000/consultar", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({pergunta: texto}),
+        signal: controlador.signal,
+        credentials: "omit",
+        cache: "no-store"
+      });
+      if (!http.ok) {
+        if (http.status === 503) throw new Error("O assistente está ocupado. Aguarde e tente novamente.");
+        throw new Error("Não foi possível concluir a consulta. Verifique a API e tente novamente.");
+      }
+      const dados = await http.json();
+      const estados = ["respondido", "nao_consta", "bloqueado"];
+      if (!dados || !estados.includes(dados.status) || typeof dados.resposta !== "string" || !Array.isArray(dados.evidencias)) {
+        throw new Error("A API retornou uma resposta em formato inesperado.");
+      }
+      const bloqueado = dados.status === "bloqueado" || dados.validacao !== "formal_aprovada";
+      if (bloqueado) {
+        titulo.textContent = "Resposta não liberada";
+        resposta.textContent = "Não foi possível validar a resposta gerada. Procure orientação humana.";
+      } else {
+        titulo.textContent = dados.status === "nao_consta" ? "Informação não disponível" : "Resposta do assistente";
+        resposta.textContent = dados.resposta;
+        if (dados.status === "respondido") {
+          for (const item of dados.evidencias) {
+            if (!item || typeof item.citacao !== "string") continue;
+            const li = document.createElement("li");
+            const nome = document.createElement("strong");
+            nome.textContent = typeof item.fonte === "string" ? item.fonte : "Fonte documental";
+            const trecho = document.createElement("blockquote");
+            trecho.textContent = item.citacao;
+            li.append(nome, trecho);
+            if (typeof item.url === "string") {
+              try {
+                const url = new URL(item.url);
+                if (["https:", "http:"].includes(url.protocol)) {
+                  const link = document.createElement("a");
+                  link.href = url.href;
+                  link.target = "_blank";
+                  link.rel = "noopener noreferrer";
+                  link.textContent = "Conferir fonte original";
+                  li.append(link);
+                }
+              } catch { /* Fonte sem endereço válido permanece como texto. */ }
+            }
+            evidencias.append(li);
+          }
+        }
+        fontes.hidden = evidencias.childElementCount === 0;
+      }
+      resultado.hidden = false;
+      status.textContent = bloqueado ? "A resposta foi bloqueada pela validação." : "Consulta concluída. Confira a resposta abaixo.";
+    } catch (erro) {
+      status.textContent = erro.name === "AbortError"
+        ? "A consulta demorou mais que o esperado. A API pode ainda estar processando. Aguarde antes de tentar novamente."
+        : erro instanceof TypeError
+          ? "Não foi possível conectar. Confirme se a API está aberta na porta 8000 e o site na porta 5500."
+          : erro.message;
+    } finally {
+      clearTimeout(temporizador);
+      processando = false;
+      enviar.disabled = false;
+      limpar.disabled = false;
+      pergunta.readOnly = false;
+      resultado.setAttribute("aria-busy", "false");
+    }
+  });
+  pergunta.addEventListener("input", () => pergunta.setCustomValidity(""));
+})();
+  </script>
+</body>
+</html>
