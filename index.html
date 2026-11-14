@@ -173,23 +173,13 @@
     limpar.disabled = true;
     pergunta.readOnly = true;
     resultado.setAttribute("aria-busy", "true");
-    status.textContent = "Consultando as orientações. Aguarde a resposta...";
-    const controlador = new AbortController();
-    const temporizador = setTimeout(() => controlador.abort(), 120000);
+    status.textContent = "Conectando ao assistente gratuito. Pode haver fila; aguarde...";
+    // A fila do ZeroGPU pode demorar; o cliente acompanha a consulta.
     try {
-      const http = await fetch("http://127.0.0.1:8000/consultar", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({pergunta: texto}),
-        signal: controlador.signal,
-        credentials: "omit",
-        cache: "no-store"
-      });
-      if (!http.ok) {
-        if (http.status === 503) throw new Error("O assistente está ocupado. Aguarde e tente novamente.");
-        throw new Error("Não foi possível concluir a consulta. Verifique a API e tente novamente.");
-      }
-      const dados = await http.json();
+      const { Client } = await import("https://cdn.jsdelivr.net/npm/@gradio/client@2.7.0/dist/index.min.js");
+      const cliente = await Client.connect("MariAstro4/reencontro-assistente");
+      const retorno = await cliente.predict("/consultar", { pergunta: texto });
+      const dados = retorno.data[0];
       const estados = ["respondido", "nao_consta", "bloqueado"];
       if (!dados || !estados.includes(dados.status) || typeof dados.resposta !== "string" || !Array.isArray(dados.evidencias)) {
         throw new Error("A API retornou uma resposta em formato inesperado.");
@@ -234,10 +224,9 @@
       status.textContent = erro.name === "AbortError"
         ? "A consulta demorou mais que o esperado. A API pode ainda estar processando. Aguarde antes de tentar novamente."
         : erro instanceof TypeError
-          ? "Não foi possível conectar. Confirme se a API está aberta na porta 8000 e o site na porta 5500."
+          ? "Não foi possível conectar. Tente novamente ou abra o assistente no Hugging Face para conferir sua disponibilidade."
           : erro.message;
     } finally {
-      clearTimeout(temporizador);
       processando = false;
       enviar.disabled = false;
       limpar.disabled = false;
