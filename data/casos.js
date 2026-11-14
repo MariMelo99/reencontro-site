@@ -1400,3 +1400,7 @@ window.REENCONTRO_CASOS = [
     "foto2026": "assets/retratos/SIM-100-1.jpg"
   }
 ];
+window.REENCONTRO_CASOS.forEach(caso => {
+  caso.fotoEpoca = caso.fotoEpoca.replace('assets/retratos/', '');
+  caso.foto2026 = caso.foto2026.replace('assets/retratos/', '');
+});
