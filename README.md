@@ -57,10 +57,10 @@ O validador verifica campos e tipos do JSON, o identificador da fonte e a presen
 | `foto.js`, `foto-ui.js` | Comparação visual e interface de busca por foto |
 | `data/` | Base dos casos fictícios |
 | `SIM-*.jpg` | Imagens na raiz, conforme os caminhos ajustados em `data/casos.js` |
-| `entrega-academica/assistente/` | Código do assistente, base documental e adaptador LoRA |
-| `entrega-academica/RELATORIO_TECNICO.md` | Arquitetura, evidências observadas e limites da avaliação |
+| `entrega-academica/projeto/` | Código do assistente, base documental e adaptador LoRA |
+| `entrega-academica/RELATORIO_TECNICO_ATUALIZADO.md` | Arquitetura, evidências observadas e limites da avaliação |
 | `entrega-academica/testes_observados.json` | Registro dos testes manuais, sem estimar métricas |
-| `entrega-academica/PENDENCIAS.md` | Materiais acadêmicos ainda a incorporar |
+| `entrega-academica/CONFERENCIA_FINAL.json` | Escopo e resultados da conferência |
 
 ## Executar o site localmente
 
@@ -72,30 +72,17 @@ python -m http.server 5500
 
 Abra `http://localhost:5500`. O assistente continuará consultando o Space público; não é necessário iniciar uma API local para usar o HTML publicado.
 
-## Executar o assistente
+## Executar e reproduzir o assistente
 
-### Hugging Face ZeroGPU
+**Projeto local original:** [instruções completas](entrega-academica/projeto/README.md). Esse README descreve a execução local original, com API e site em localhost. Não é necessário manter o computador ligado para usar o site público atual.
 
-No Space, mantenha SDK Gradio e hardware ZeroGPU. Envie **o conteúdo** de `entrega-academica/assistente/` para a raiz do Space, preservando `base/` e `artefatos/`. O README interno possui os metadados do Space. O modelo base é baixado durante a inicialização; os pesos do adaptador estão incluídos.
+**Versão hospedada:** [diferenças do Space](entrega-academica/versao-hospedada/LEIA-ME.md). O Space usa Gradio/ZeroGPU, Qwen3-0.6B e o adaptador do experimento 03. A pasta original preserva api.py (FastAPI local); app.py na pasta versao-hospedada registra a implementação pública.
 
-A dependência PyTorch e a versão do Gradio são gerenciadas pelo ambiente do Space. As demais dependências constam do `requirements.txt` interno. Uma instalação futura pode exigir ajustes de compatibilidade; as versões ainda não foram congeladas a partir do ambiente efetivamente implantado.
+Para reexecutar apenas as análises, abra Jupyter a partir de `entrega-academica/projeto` e acesse `notebooks/`. As células fornecidas reanalisam logs e resultados; não refazem treinamento ou inferência. Consulte o README interno para o ambiente.
 
-### Computador local
+O treino JSON é implementado em `treinar_json.py`. A avaliação de 12 perguntas é implementada por `avaliar_json_03.py`, que configura `avaliacao_final.py`. Antes de novo treino, escolha outra pasta SAIDA: os adaptadores e resultados originais devem ser preservados. O modelo base precisa estar previamente baixado porque os scripts locais usam local_files_only=True.
 
-Em um ambiente Python compatível com PyTorch e Gradio:
-
-```bash
-cd entrega-academica/assistente
-python -m venv .venv
-# Ative o ambiente conforme seu sistema operacional.
-python -m pip install torch gradio
-python -m pip install -r requirements.txt
-python app.py
-```
-
-O `app.py` está configurado para CUDA/ZeroGPU. Fora do Hugging Face, requer GPU CUDA compatível. Para CPU, adapte `model.to("cuda")` e a transferência das entradas para `"cpu"`; o desempenho será diferente.
-
-`api_local.py` preserva a implementação FastAPI original e **não** representa o endpoint usado pelo site atual. Ela exige dependências adicionais (FastAPI e Uvicorn), modelo previamente baixado e configuração local de origens CORS. Não a publique sem adaptar essas configurações.
+Os requirements locais originais foram preservados; os da versão hospedada são separados. Os arquivos de ambiente não garantem reprodução bit a bit sem uma revisão fixa do modelo e bibliotecas compatíveis.
 
 ## Testes e limitações conhecidas
 
@@ -105,7 +92,7 @@ A cota do ZeroGPU foi atingida durante testes. O serviço aplica limites de uso 
 
 ### Avaliação experimental registrada
 
-Os três notebooks, com saídas originais, estão em `entrega-academica/assistente/notebooks/`. Suas células de análise foram reexecutadas com os JSONs fornecidos; isso não refez treinamento nem inferência. Os registros de reexecução estão em `avaliacao/reexecucao_*.txt`.
+Os três notebooks, com saídas originais, estão em `entrega-academica/projeto/notebooks/`. Suas células de análise foram reexecutadas com os JSONs fornecidos; isso não refez treinamento nem inferência. O escopo está em `entrega-academica/CONFERENCIA_FINAL.json`.
 
 | Configuração | JSON válido | Conteúdo correto e completo | Validação formal | Aproveitáveis: conteúdo correto + validação | Tempo médio local |
 |---|---:|---:|---:|---:|---:|
@@ -115,9 +102,9 @@ Os três notebooks, com saídas originais, estão em `entrega-academica/assisten
 
 São 12 perguntas por configuração, com revisão assistida por IA sujeita à conferência da autora. Não são resultados de teste independente amplo. Os tempos foram registrados na execução local original, não na Vercel ou no ZeroGPU. Recall@1 e Recall@3 da recuperação: 5/6 = 83,33% nas perguntas respondíveis.
 
-Os arquivos `avaliacao/avaliacao_congelada_20261114_160302_507373.json` e `avaliacao/revisao_assistida_experimento_03.json` preservam respostas e classificações; `conjunto_teste_extraido.json` reúne as perguntas e gabaritos desse mesmo teste.
+Os arquivos `avaliacao/avaliacao_congelada_20261114_160302_507373.json` e `avaliacao/revisao_assistida_experimento_03.json` preservam respostas e classificações; as perguntas e gabaritos também estão no script `avaliar_json_03.py`.
 
-O notebook 03 mostra fabricação de informação no baseline e conteúdo adicional sem suporte no LoRA + RAG, inclusive um caso aceito pelo validador formal. Consulte o relatório técnico para os exemplos e limites. Os notebooks analisam logs e avaliações; não executam treinamento ou uma nova geração. Os scripts originais que geraram esses artefatos ainda não estão incluídos neste complemento.
+O notebook 03 mostra fabricação de informação no baseline e conteúdo adicional sem suporte no LoRA + RAG, inclusive um caso aceito pelo validador formal. Consulte o relatório técnico para os exemplos e limites. Os notebooks analisam logs e avaliações; não executam treinamento ou uma nova geração. A pasta completa inclui os scripts de treinamento, calibração e avaliação, os datasets, os logs e os adaptadores. As 12 perguntas do avaliador foram conferidas contra o registro congelado. O relatório Word original está em `entrega-academica/projeto/docs/Relatorio_Reencontro_LLM_Consolidado.docx`; ele foi preservado e deve ser lido junto das notas atualizadas sobre hospedagem.
 
 ## Dados e privacidade
 
@@ -129,4 +116,4 @@ Use apenas dados fictícios na demonstração. As consultas ao assistente são e
 - ZeroGPU, cotas e requisitos: https://huggingface.co/docs/hub/spaces-zerogpu
 - PEFT: https://huggingface.co/docs/peft/
 - Cliente JavaScript Gradio: https://www.gradio.app/guides/getting-started-with-the-js-client
-- Fontes documentais específicas: `entrega-academica/assistente/base/conhecimento.json`.
+- Fontes documentais específicas: `entrega-academica/projeto/base/conhecimento.json`.
