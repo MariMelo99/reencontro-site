@@ -1,0 +1,30 @@
+
+EXPERIMENTO 01
+Perda inicial: 0.472709
+Época 1 | treino 0.240461 | validação 0.560837
+Época 2 | treino 0.055074 | validação 0.031521
+Época 3 | treino 0.006237 | validação 0.27122
+Melhor época: 2
+
+EXPERIMENTO 02
+Perda inicial: 0.472709
+Época 1 | treino 0.138327 | validação 0.006456
+Época 2 | treino 0.00215 | validação 0.002304
+Época 3 | treino 0.000414 | validação 0.002076
+Melhor época: 3
+
+EXPERIMENTO 03
+Perda inicial: 0.224634
+Época 1 | treino 0.173716 | validação 0.030333
+Época 2 | treino 0.063615 | validação 0.00932
+Época 3 | treino 0.02743 | validação 0.009827
+Melhor época: 2
+Modelo base: Qwen/Qwen3-0.6B
+Rank: 8 | Alpha: 16 | Dropout: 0.05
+Módulos: ['q_proj', 'v_proj']
+Taxa de aprendizado: 0.0001
+Tempo registrado: 453.3 segundos
+Revisão do modelo base fixada: None
+treino_json | total 32 | respondidos 14 | recusas 18
+validacao_json | total 8 | respondidos 4 | recusas 4
+Citações dos gabaritos presentes literalmente nos contextos.

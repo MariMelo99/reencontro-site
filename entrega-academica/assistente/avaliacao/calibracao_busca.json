@@ -1,0 +1,950 @@
+{
+  "tipo": "Calibração em conjunto de desenvolvimento",
+  "criterio": "Maior acurácia balanceada, com desempate por maior sensibilidade e depois menor limiar",
+  "melhor_configuracao": {
+    "limiar": 0.2,
+    "sensibilidade": 1.0,
+    "especificidade": 1.0,
+    "acuracia_balanceada": 1.0,
+    "respondiveis_aceitas": 7,
+    "respondiveis_rejeitadas": 0,
+    "sem_resposta_aceitas": 0,
+    "sem_resposta_rejeitadas": 7
+  },
+  "metricas_recuperacao": {
+    "recall_1_antes": 1.0,
+    "recall_3_antes": 1.0,
+    "recall_1_depois": 1.0,
+    "recall_3_depois": 1.0
+  },
+  "candidatos": [
+    {
+      "limiar": 0.0,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.02,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.04,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.06,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.08,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.1,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.12,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 7,
+      "sem_resposta_rejeitadas": 0
+    },
+    {
+      "limiar": 0.14,
+      "sensibilidade": 1.0,
+      "especificidade": 0.5714285714285714,
+      "acuracia_balanceada": 0.7857142857142857,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 3,
+      "sem_resposta_rejeitadas": 4
+    },
+    {
+      "limiar": 0.16,
+      "sensibilidade": 1.0,
+      "especificidade": 0.8571428571428571,
+      "acuracia_balanceada": 0.9285714285714286,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 1,
+      "sem_resposta_rejeitadas": 6
+    },
+    {
+      "limiar": 0.18,
+      "sensibilidade": 1.0,
+      "especificidade": 0.8571428571428571,
+      "acuracia_balanceada": 0.9285714285714286,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 1,
+      "sem_resposta_rejeitadas": 6
+    },
+    {
+      "limiar": 0.2,
+      "sensibilidade": 1.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 1.0,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.22,
+      "sensibilidade": 1.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 1.0,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.24,
+      "sensibilidade": 1.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 1.0,
+      "respondiveis_aceitas": 7,
+      "respondiveis_rejeitadas": 0,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.26,
+      "sensibilidade": 0.8571428571428571,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.9285714285714286,
+      "respondiveis_aceitas": 6,
+      "respondiveis_rejeitadas": 1,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.28,
+      "sensibilidade": 0.8571428571428571,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.9285714285714286,
+      "respondiveis_aceitas": 6,
+      "respondiveis_rejeitadas": 1,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.3,
+      "sensibilidade": 0.8571428571428571,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.9285714285714286,
+      "respondiveis_aceitas": 6,
+      "respondiveis_rejeitadas": 1,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.32,
+      "sensibilidade": 0.7142857142857143,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.8571428571428572,
+      "respondiveis_aceitas": 5,
+      "respondiveis_rejeitadas": 2,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.34,
+      "sensibilidade": 0.7142857142857143,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.8571428571428572,
+      "respondiveis_aceitas": 5,
+      "respondiveis_rejeitadas": 2,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.36,
+      "sensibilidade": 0.5714285714285714,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.7857142857142857,
+      "respondiveis_aceitas": 4,
+      "respondiveis_rejeitadas": 3,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.38,
+      "sensibilidade": 0.42857142857142855,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.7142857142857143,
+      "respondiveis_aceitas": 3,
+      "respondiveis_rejeitadas": 4,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.4,
+      "sensibilidade": 0.42857142857142855,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.7142857142857143,
+      "respondiveis_aceitas": 3,
+      "respondiveis_rejeitadas": 4,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.42,
+      "sensibilidade": 0.2857142857142857,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.6428571428571428,
+      "respondiveis_aceitas": 2,
+      "respondiveis_rejeitadas": 5,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.44,
+      "sensibilidade": 0.2857142857142857,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.6428571428571428,
+      "respondiveis_aceitas": 2,
+      "respondiveis_rejeitadas": 5,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.46,
+      "sensibilidade": 0.2857142857142857,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.6428571428571428,
+      "respondiveis_aceitas": 2,
+      "respondiveis_rejeitadas": 5,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.48,
+      "sensibilidade": 0.2857142857142857,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.6428571428571428,
+      "respondiveis_aceitas": 2,
+      "respondiveis_rejeitadas": 5,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.5,
+      "sensibilidade": 0.2857142857142857,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.6428571428571428,
+      "respondiveis_aceitas": 2,
+      "respondiveis_rejeitadas": 5,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.52,
+      "sensibilidade": 0.14285714285714285,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5714285714285714,
+      "respondiveis_aceitas": 1,
+      "respondiveis_rejeitadas": 6,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.54,
+      "sensibilidade": 0.14285714285714285,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5714285714285714,
+      "respondiveis_aceitas": 1,
+      "respondiveis_rejeitadas": 6,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.56,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.58,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.6,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.62,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.64,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.66,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.68,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.7,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.72,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.74,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.76,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.78,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.8,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.82,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.84,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.86,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.88,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.9,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.92,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.94,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.96,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 0.98,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    },
+    {
+      "limiar": 1.0,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "acuracia_balanceada": 0.5,
+      "respondiveis_aceitas": 0,
+      "respondiveis_rejeitadas": 7,
+      "sem_resposta_aceitas": 0,
+      "sem_resposta_rejeitadas": 7
+    }
+  ],
+  "casos": [
+    {
+      "pergunta": "Preciso esperar 24 horas para registrar o desaparecimento?",
+      "fontes_esperadas": [
+        "oficial_001"
+      ],
+      "pontuacao_maxima": 0.5583305473232189,
+      "recuperados": [
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.5583305473232189
+        },
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.03565167432633261
+        },
+        {
+          "id": "produto_004",
+          "titulo": "Envio de informações adicionais",
+          "texto": "O usuário pode abrir uma ficha e escrever uma informação adicional para encaminhamento à fila de revisão humana. No protótipo acadêmico, esse fluxo é simulado e deve utilizar informações fictícias.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.025343827135375623
+        }
+      ]
+    },
+    {
+      "pergunta": "O SINAL DESAPARECIDOS substitui o registro de ocorrência?",
+      "fontes_esperadas": [
+        "oficial_002"
+      ],
+      "pontuacao_maxima": 0.5034994286163046,
+      "recuperados": [
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.5034994286163046
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.17995921407212986
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.030223834116326443
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é a finalidade do projeto Reencontro?",
+      "fontes_esperadas": [
+        "produto_001"
+      ],
+      "pontuacao_maxima": 0.3064042252189089,
+      "recuperados": [
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.3064042252189089
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.04635693522245553
+        },
+        {
+          "id": "produto_003",
+          "titulo": "Busca por foto",
+          "texto": "A busca por foto do protótipo apresenta uma comparação visual demonstrativa. Uma semelhança entre imagens não confirma a identidade de uma pessoa. A análise de uma possível correspondência exige revisão humana.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.03353297934204585
+        }
+      ]
+    },
+    {
+      "pergunta": "Posso consultar casos pelo nome ou por características?",
+      "fontes_esperadas": [
+        "produto_002"
+      ],
+      "pontuacao_maxima": 0.4042209398538884,
+      "recuperados": [
+        {
+          "id": "produto_002",
+          "titulo": "Consulta por informações",
+          "texto": "No protótipo Reencontro, o usuário pode iniciar uma consulta pelo nome ou por características e refinar os resultados usando os filtros disponíveis. Os resultados representam casos fictícios utilizados na demonstração acadêmica.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.4042209398538884
+        },
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.0590170642133491
+        },
+        {
+          "id": "produto_003",
+          "titulo": "Busca por foto",
+          "texto": "A busca por foto do protótipo apresenta uma comparação visual demonstrativa. Uma semelhança entre imagens não confirma a identidade de uma pessoa. A análise de uma possível correspondência exige revisão humana.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.05313360416027652
+        }
+      ]
+    },
+    {
+      "pergunta": "Uma foto semelhante confirma a identidade?",
+      "fontes_esperadas": [
+        "produto_003"
+      ],
+      "pontuacao_maxima": 0.3467944506643664,
+      "recuperados": [
+        {
+          "id": "produto_003",
+          "titulo": "Busca por foto",
+          "texto": "A busca por foto do protótipo apresenta uma comparação visual demonstrativa. Uma semelhança entre imagens não confirma a identidade de uma pessoa. A análise de uma possível correspondência exige revisão humana.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.3467944506643664
+        },
+        {
+          "id": "produto_004",
+          "titulo": "Envio de informações adicionais",
+          "texto": "O usuário pode abrir uma ficha e escrever uma informação adicional para encaminhamento à fila de revisão humana. No protótipo acadêmico, esse fluxo é simulado e deve utilizar informações fictícias.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.034293651097374714
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.025909339170315914
+        }
+      ]
+    },
+    {
+      "pergunta": "Como enviar informações adicionais para revisão?",
+      "fontes_esperadas": [
+        "produto_004"
+      ],
+      "pontuacao_maxima": 0.25107653949101005,
+      "recuperados": [
+        {
+          "id": "produto_004",
+          "titulo": "Envio de informações adicionais",
+          "texto": "O usuário pode abrir uma ficha e escrever uma informação adicional para encaminhamento à fila de revisão humana. No protótipo acadêmico, esse fluxo é simulado e deve utilizar informações fictícias.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.25107653949101005
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.16043873912067938
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.04430632038930185
+        }
+      ]
+    },
+    {
+      "pergunta": "A base contém localização atual verificada?",
+      "fontes_esperadas": [
+        "produto_005"
+      ],
+      "pontuacao_maxima": 0.3741980769199792,
+      "recuperados": [
+        {
+          "id": "produto_005",
+          "titulo": "Limites das informações disponíveis",
+          "texto": "A base demonstrativa não contém localização atual verificada, resultados de investigação ou confirmação de reencontro dos casos fictícios. Quando a pergunta exigir essas informações, o assistente deve informar que elas não constam na base.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.3741980769199792
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.03498946407576144
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é o telefone da equipe do Reencontro?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.19129876544918964,
+      "recuperados": [
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.19129876544918964
+        },
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.08540522829013054
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.05351309874428275
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é o endereço do primeiro totem?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.13078152357917155,
+      "recuperados": [
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.13078152357917155
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.09990749449376844
+        },
+        {
+          "id": "produto_003",
+          "titulo": "Busca por foto",
+          "texto": "A busca por foto do protótipo apresenta uma comparação visual demonstrativa. Uma semelhança entre imagens não confirma a identidade de uma pessoa. A análise de uma possível correspondência exige revisão humana.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.0946027624012833
+        }
+      ]
+    },
+    {
+      "pergunta": "Quanto custa instalar um totem?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.1408080133147382,
+      "recuperados": [
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.1408080133147382
+        }
+      ]
+    },
+    {
+      "pergunta": "Em quantas horas a equipe revisa um relato?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.1303348924500863,
+      "recuperados": [
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.1303348924500863
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.09956630106025706
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem é o responsável técnico pelo projeto?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.1329419098690587,
+      "recuperados": [
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.1329419098690587
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.1083445508762823
+        },
+        {
+          "id": "produto_002",
+          "titulo": "Consulta por informações",
+          "texto": "No protótipo Reencontro, o usuário pode iniciar uma consulta pelo nome ou por características e refinar os resultados usando os filtros disponíveis. Os resultados representam casos fictícios utilizados na demonstração acadêmica.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.06934074482002502
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é o horário de atendimento presencial?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.15961030342534746,
+      "recuperados": [
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.15961030342534746
+        },
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.14824496255225517
+        },
+        {
+          "id": "oficial_002",
+          "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+          "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+          "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+          "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+          "pontuacao": 0.11910930651153483
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é o e-mail para falar com a equipe?",
+      "fontes_esperadas": [],
+      "pontuacao_maxima": 0.13078152357917155,
+      "recuperados": [
+        {
+          "id": "oficial_001",
+          "titulo": "Registro do desaparecimento",
+          "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+          "fonte": "Senado Federal — Pessoas Desaparecidas",
+          "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+          "pontuacao": 0.13078152357917155
+        },
+        {
+          "id": "produto_004",
+          "titulo": "Envio de informações adicionais",
+          "texto": "O usuário pode abrir uma ficha e escrever uma informação adicional para encaminhamento à fila de revisão humana. No protótipo acadêmico, esse fluxo é simulado e deve utilizar informações fictícias.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.10223722888754246
+        },
+        {
+          "id": "produto_001",
+          "titulo": "Finalidade do Reencontro",
+          "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+          "fonte": "Documentação do projeto Reencontro",
+          "url": null,
+          "pontuacao": 0.09990749449376844
+        }
+      ]
+    }
+  ]
+}

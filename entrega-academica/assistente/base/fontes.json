@@ -1,0 +1,42 @@
+[
+  {
+    "fonte": "Senado Federal",
+    "ids": [
+      "oficial_001"
+    ],
+    "formato": "Página HTML resumida em um trecho JSON",
+    "numero_trechos": 1,
+    "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+    "verificacao_url": "2026-11-14",
+    "licenca": "Não identificada na página consultada. Confirmar condições de reutilização.",
+    "tratamento": "Resumo autoral de orientação com atribuição. Não é reprodução integral."
+  },
+  {
+    "fonte": "Portal Gov.br e PRF",
+    "ids": [
+      "oficial_002"
+    ],
+    "formato": "Página HTML resumida em um trecho JSON",
+    "numero_trechos": 1,
+    "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+    "verificacao_url": "2026-11-14",
+    "licenca": "Rodapé informa CC BY-ND 3.0 Não Adaptada.",
+    "tratamento": "Trecho é resumo autoral. A licença do portal não foi estendida ao resumo nem tratada como autorização genérica para adaptação. Conferir condições antes de ampliar a redistribuição."
+  },
+  {
+    "fonte": "Documentação autoral Reencontro",
+    "ids": [
+      "produto_001",
+      "produto_002",
+      "produto_003",
+      "produto_004",
+      "produto_005"
+    ],
+    "formato": "JSON autoral",
+    "numero_trechos": 5,
+    "url": null,
+    "verificacao_url": null,
+    "licenca": "Licença de redistribuição a definir pela autora.",
+    "tratamento": "Documentação do protótipo, com dados fictícios."
+  }
+]

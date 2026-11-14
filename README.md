@@ -103,7 +103,21 @@ Foram observadas respostas com evidências e validação formal aprovada sobre a
 
 A cota do ZeroGPU foi atingida durante testes. O serviço aplica limites de uso e filas; a cota diária é renovável. Não há garantia de disponibilidade contínua. Nenhum token pessoal deve ser inserido no HTML ou no repositório público.
 
-Não há, neste complemento, métricas agregadas de acurácia, latência, taxa de alucinação ou taxa de recusas: elas precisam ser calculadas com conjunto de teste definido e saídas preservadas. Consulte as pendências para os notebooks e as avaliações ainda necessárias.
+### Avaliação experimental registrada
+
+Os três notebooks, com saídas originais, estão em `entrega-academica/assistente/notebooks/`. Suas células de análise foram reexecutadas com os JSONs fornecidos; isso não refez treinamento nem inferência. Os registros de reexecução estão em `avaliacao/reexecucao_*.txt`.
+
+| Configuração | JSON válido | Conteúdo correto e completo | Validação formal | Aproveitáveis: conteúdo correto + validação | Tempo médio local |
+|---|---:|---:|---:|---:|---:|
+| Sem contexto | 12/12 | 5/12 | 0/12 | 0/12 | 8,70 s |
+| RAG simples | 12/12 | 9/12 | 3/12 | 3/12 | 9,45 s |
+| LoRA + RAG | 12/12 | 10/12 | 11/12 | 9/12 | 9,71 s |
+
+São 12 perguntas por configuração, com revisão assistida por IA sujeita à conferência da autora. Não são resultados de teste independente amplo. Os tempos foram registrados na execução local original, não na Vercel ou no ZeroGPU. Recall@1 e Recall@3 da recuperação: 5/6 = 83,33% nas perguntas respondíveis.
+
+Os arquivos `avaliacao/avaliacao_congelada_20261114_160302_507373.json` e `avaliacao/revisao_assistida_experimento_03.json` preservam respostas e classificações; `conjunto_teste_extraido.json` reúne as perguntas e gabaritos desse mesmo teste.
+
+O notebook 03 mostra fabricação de informação no baseline e conteúdo adicional sem suporte no LoRA + RAG, inclusive um caso aceito pelo validador formal. Consulte o relatório técnico para os exemplos e limites. Os notebooks analisam logs e avaliações; não executam treinamento ou uma nova geração. Os scripts originais que geraram esses artefatos ainda não estão incluídos neste complemento.
 
 ## Dados e privacidade
 

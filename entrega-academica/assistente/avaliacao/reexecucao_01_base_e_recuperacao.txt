@@ -1,0 +1,46 @@
+Trechos consultáveis: 7
+oficial_001 | Registro do desaparecimento | Senado Federal — Pessoas Desaparecidas
+oficial_002 | Comunicação pelo SINAL DESAPARECIDOS | Portal Gov.br — SINAL DESAPARECIDOS
+produto_001 | Finalidade do Reencontro | Documentação do projeto Reencontro
+produto_002 | Consulta por informações | Documentação do projeto Reencontro
+produto_003 | Busca por foto | Documentação do projeto Reencontro
+produto_004 | Envio de informações adicionais | Documentação do projeto Reencontro
+produto_005 | Limites das informações disponíveis | Documentação do projeto Reencontro
+
+Fontes e condições de reutilização
+Senado Federal | 1 trechos | Não identificada na página consultada. Confirmar condições de reutilização.
+Portal Gov.br e PRF | 1 trechos | Rodapé informa CC BY-ND 3.0 Não Adaptada.
+Documentação autoral Reencontro | 5 trechos | Licença de redistribuição a definir pela autora.
+{
+  "limiar": 0.2,
+  "sensibilidade": 1.0,
+  "especificidade": 1.0,
+  "acuracia_balanceada": 1.0,
+  "respondiveis_aceitas": 7,
+  "respondiveis_rejeitadas": 0,
+  "sem_resposta_aceitas": 0,
+  "sem_resposta_rejeitadas": 7
+}
+{
+  "recall_1_antes": 1.0,
+  "recall_3_antes": 1.0,
+  "recall_1_depois": 1.0,
+  "recall_3_depois": 1.0
+}
+Scikit-learn nesta execução: 1.8.0
+j001 ['oficial_001'] | ranking igual ao registrado: True
+j002 ['oficial_002'] | ranking igual ao registrado: True
+j003 [] | ranking igual ao registrado: True
+j004 ['produto_002', 'produto_003'] | ranking igual ao registrado: True
+j005 ['produto_003'] | ranking igual ao registrado: True
+j006 ['produto_004'] | ranking igual ao registrado: True
+j007 ['oficial_001', 'produto_003'] | ranking igual ao registrado: True
+j008 ['produto_001'] | ranking igual ao registrado: True
+j009 [] | ranking igual ao registrado: True
+j010 [] | ranking igual ao registrado: True
+j011 [] | ranking igual ao registrado: True
+j012 ['produto_001'] | ranking igual ao registrado: True
+
+Perguntas respondíveis: 6
+Recall@1: 0.8333
+Recall@3: 0.8333

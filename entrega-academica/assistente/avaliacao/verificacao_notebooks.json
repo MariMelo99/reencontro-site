@@ -1,0 +1,20 @@
+[
+  {
+    "notebook": "01_base_e_recuperacao.ipynb",
+    "code_cells_executed": 4,
+    "status": "passed",
+    "scope": "Reanalyse supplied logs and TF-IDF; no new training or model inference."
+  },
+  {
+    "notebook": "02_treinamento_e_selecao.ipynb",
+    "code_cells_executed": 4,
+    "status": "passed",
+    "scope": "Reanalyse supplied logs and TF-IDF; no new training or model inference."
+  },
+  {
+    "notebook": "03_placar_e_falhas.ipynb",
+    "code_cells_executed": 4,
+    "status": "passed",
+    "scope": "Reanalyse supplied logs and TF-IDF; no new training or model inference."
+  }
+]

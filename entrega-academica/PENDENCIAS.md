@@ -1,15 +1,14 @@
-# Conferência da entrega acadêmica
+# Estado da entrega
 
-Este complemento reúne os arquivos efetivamente fornecidos durante a publicação. Ele não substitui os notebooks originais ou um relatório experimental completo.
+Incluídos: três notebooks com saídas; base e fontes; logs dos experimentos 01/02/03; treino/validação do experimento 03; adaptador; avaliação congelada e revisão; conjunto de perguntas extraído; API; README; relatório com performance e falhas reais.
 
-Ainda incorporar:
+Verificado: reexecução das células de análise dos três notebooks e recálculo dos totais da revisão. Não foram refeitos treinamento ou inferência.
 
-- Notebooks de preparação, treinamento e avaliação, com saídas executadas e versões do ambiente.
-- Conjunto de teste independente e critérios de classificação.
-- Saídas brutas das execuções e métricas calculadas a partir delas.
-- Demonstração documentada de alucinações, com pergunta, documentos recuperados, saída bruta, resultado da validação e análise humana. A recusa indevida observada não basta para demonstrar uma alucinação factual.
-- Relatório consolidado original, se exigido pela disciplina; o relatório técnico deste complemento é parcial.
-- Capturas ou vídeo de demonstração e conferência de todas as imagens (em inspeção anterior foram encontrados 199 arquivos JPG para 100 pares esperados).
-- Conferência de dependências e congelamento das versões do Space em funcionamento.
+Para reprodução integral e conclusão da conferência:
+- Incorporar scripts originais de preparação, treinamento e geração da avaliação, se exigidos. Os notebooks fornecidos apenas analisam os artefatos.
+- Conferir pela autora as classificações assistidas por IA.
+- Congelar versões do ambiente e revisão do modelo base.
+- Conferir todas as imagens do site e os requisitos finais da rubrica da disciplina.
+- Se houver relatório consolidado exigido em outro formato, atualizar seu conteúdo com estes resultados.
 
-Não apresentar o registro de testes manuais deste complemento como conjunto de teste completo ou prova de acurácia.
+Não afirmar que o teste é independente amplo, que a aprovação formal elimina alucinações ou que o ZeroGPU oferece uso ilimitado.
