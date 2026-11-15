@@ -19,6 +19,69 @@ O site e o assistente estão hospedados externamente e não dependem do computad
 | Mariana Melo | RM98121 |
 
 **Turma:** 4ESPV · **Desafio:** CitizenTech
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Ficha técnica do MVP
+
+### Produto e objetivo
+
+**Reencontro** é um protótipo acadêmico para consulta de casos fictícios de desaparecimento e encaminhamento de relatos para revisão humana. O cidadão pode começar a busca por nome, características ou foto.
+
+### Público e território
+
+Cidadãos, familiares e equipes de acolhimento. O piloto proposto prevê um ponto de atendimento assistido na cidade de São Paulo (SP). Sua implantação ainda não foi realizada.
+
+### Problema
+
+Quem dispõe de poucas informações sobre um desaparecimento precisa conseguir consultar possíveis casos e encaminhar uma pista para análise humana.
+
+### Proposta de valor
+
+Reunir busca por diferentes tipos de informação, consulta de fichas e envio de relatos com protocolo em uma interface acessível. Nesta demonstração, os registros, os relatos e a revisão são simulados.
+
+### Arquitetura
+
+- Portal em HTML, CSS e JavaScript, publicado na Vercel.
+- Base JSON com 100 casos fictícios e retratos sintéticos.
+- Comparação visual demonstrativa de imagens, sem confirmação de identidade.
+- Fila simulada de revisão e painel de indicadores.
+- Protocolos de teste armazenados no navegador, sem compartilhamento entre usuários.
+- Assistente publicado no Hugging Face, com recuperação documental e modelo Qwen3-0.6B adaptado por LoRA.
+
+### Dados e fontes
+
+A demonstração utiliza casos fictícios, imagens sintéticas e relatos de teste. A base de conhecimento do assistente reúne sete trechos com identificação das fontes, incluindo documentação do projeto e orientações oficiais.
+
+Os dados usados para contextualizar o problema devem ser acompanhados da referência, do período e do recorte territorial correspondentes. Não são utilizados como registros reais de pessoas no protótipo.
+
+### Inteligência artificial
+
+O assistente utiliza busca TF-IDF e similaridade de cosseno para recuperar documentos. O modelo Qwen3-0.6B, com adaptador LoRA do experimento 03, gera respostas estruturadas em JSON, com citações e possibilidade de recusa.
+
+A validação verifica o formato e a presença literal das citações nos documentos recuperados. Ela não garante correção semântica ou pertinência da resposta.
+
+A comparação de fotos é demonstrativa e exige revisão humana. Um detector de cartazes é uma evolução prevista, ainda não implementada nesta entrega.
+
+### Acesso
+
+- **MVP:** https://reencontro-site.vercel.app/
+- **Repositório:** https://github.com/MariMelo99/reencontro-site
+- **Assistente:** https://huggingface.co/spaces/MariAstro4/reencontro-assistente
+
+A geração por IA utiliza o ZeroGPU gratuito e está sujeita a filas e cotas de processamento.
+
+### Indicadores de impacto propostos
+
+| Indicador | Meta para o piloto | Situação |
+|---|---|---|
+| Tempo mediano para localizar uma ficha | Redução de 25% em comparação com uma consulta equivalente em Excel | Ainda não medido |
+| Conclusão do percurso sem ajuda | Pelo menos 80% dos participantes | Ainda não medido |
+
+Essas metas são hipóteses para avaliação do piloto. Não representam resultados já alcançados nem métricas de qualidade do modelo de IA.
+
+### Conexão com os ODS
+
+**ODS 10 — Redução das desigualdades, meta 10.2:** o projeto propõe ampliar as formas de acesso à consulta por nome, características ou foto, com possibilidade de atendimento assistido. Essa conexão expressa a intenção do projeto; seu impacto depende de validação com usuários.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Funcionalidades
 
