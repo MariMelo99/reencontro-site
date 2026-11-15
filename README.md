@@ -117,3 +117,7 @@ Use apenas dados fictícios na demonstração. As consultas ao assistente são e
 - PEFT: https://huggingface.co/docs/peft/
 - Cliente JavaScript Gradio: https://www.gradio.app/guides/getting-started-with-the-js-client
 - Fontes documentais específicas: `entrega-academica/projeto/base/conhecimento.json`.
+
+## Pacote leve para upload
+
+Quatro cópias idênticas de tokenizer.json foram omitidas para reduzir o volume do envio. Os scripts carregam o tokenizador do modelo base Qwen3-0.6B. Pesos LoRA, configurações, datasets, notebooks e resultados permanecem incluídos. Detalhes em `entrega-academica/projeto/docs/EMPACOTAMENTO_LEVE.md`.

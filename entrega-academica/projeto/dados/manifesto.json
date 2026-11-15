@@ -1,0 +1,24 @@
+{
+  "versao": "experimento_02",
+  "finalidade": "Experimento com treino equilibrado",
+  "conteudo": "Cenários fictícios, sem dados pessoais",
+  "separacao": "Por cenário, mantendo paráfrases na mesma divisão",
+  "quantidades": {
+    "treino": {
+      "total": 28,
+      "com_resposta": 14,
+      "sem_resposta": 14
+    },
+    "validacao": {
+      "total": 4,
+      "com_resposta": 2,
+      "sem_resposta": 2
+    },
+    "teste": {
+      "total": 4,
+      "com_resposta": 2,
+      "sem_resposta": 2
+    }
+  },
+  "observacao": "O conjunto teste.jsonl já foi analisado no experimento 01. Seu uso posterior é diagnóstico. A avaliação final requer novos cenários reservados."
+}

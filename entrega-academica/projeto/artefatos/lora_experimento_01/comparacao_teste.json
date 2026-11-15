@@ -1,0 +1,58 @@
+[
+  {
+    "id": "e001_1",
+    "contexto": "[e001] Não é necessário imprimir o recibo para retirar o material.",
+    "pergunta": "Preciso imprimir o recibo para retirar o material?",
+    "gabarito": "Não é necessário imprimir o recibo para retirar o material. [e001]",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.9113186999456957
+    },
+    "lora_com_contexto": {
+      "resposta": "Não é necessário imprimir o recibo para retirar o material. [e001]",
+      "segundos": 2.6046404999797232
+    }
+  },
+  {
+    "id": "e001_2",
+    "contexto": "[e001] Não é necessário imprimir o recibo para retirar o material.",
+    "pergunta": "É obrigatório imprimir o recibo para retirar o material?",
+    "gabarito": "Não é necessário imprimir o recibo para retirar o material. [e001]",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.540066699963063
+    },
+    "lora_com_contexto": {
+      "resposta": "Não é necessário imprimir o recibo para retirar o material. [e001]",
+      "segundos": 2.776486000046134
+    }
+  },
+  {
+    "id": "e002_1",
+    "contexto": "[e002] O núcleo oferece oficinas de pintura.",
+    "pergunta": "Quanto custa a oficina de pintura?",
+    "gabarito": "Essa informação não consta na base disponível.",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.6215334999724291
+    },
+    "lora_com_contexto": {
+      "resposta": "O núcleo oferece oficinas de pintura. [e002]",
+      "segundos": 2.7710719000315294
+    }
+  },
+  {
+    "id": "e002_2",
+    "contexto": "[e002] O núcleo oferece oficinas de pintura.",
+    "pergunta": "Qual é o valor cobrado pela oficina de pintura?",
+    "gabarito": "Essa informação não consta na base disponível.",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.6161920999875292
+    },
+    "lora_com_contexto": {
+      "resposta": "O núcleo oferece oficinas de pintura. [e002]",
+      "segundos": 2.8768903000163846
+    }
+  }
+]

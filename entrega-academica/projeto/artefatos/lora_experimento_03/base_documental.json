@@ -1,0 +1,58 @@
+[
+  {
+    "id": "oficial_001",
+    "titulo": "Registro do desaparecimento",
+    "texto": "Não é necessário esperar 24 horas para comunicar o desaparecimento de uma pessoa e registrar o boletim de ocorrência.",
+    "fonte": "Senado Federal — Pessoas Desaparecidas",
+    "url": "https://www.senado.leg.br/senado/hotsites/desap/",
+    "tipo": "orientacao_oficial"
+  },
+  {
+    "id": "oficial_002",
+    "titulo": "Comunicação pelo SINAL DESAPARECIDOS",
+    "texto": "A comunicação de desaparecimento pelo serviço SINAL DESAPARECIDOS da Polícia Rodoviária Federal não dispensa o registro de ocorrência na polícia judiciária.",
+    "fonte": "Portal Gov.br — SINAL DESAPARECIDOS",
+    "url": "https://www.gov.br/pt-br/servicos/Comunicar-desaparecimento-de-pessoas-SINAL-DESAPARECIDOS",
+    "tipo": "orientacao_oficial"
+  },
+  {
+    "id": "produto_001",
+    "titulo": "Finalidade do Reencontro",
+    "texto": "O Reencontro é um projeto acadêmico de apoio à consulta de casos e ao encaminhamento de informações sobre desaparecimentos para revisão humana. O protótipo utiliza uma base de 100 registros fictícios e imagens sintéticas.",
+    "fonte": "Documentação do projeto Reencontro",
+    "url": null,
+    "tipo": "documentacao_do_produto"
+  },
+  {
+    "id": "produto_002",
+    "titulo": "Consulta por informações",
+    "texto": "No protótipo Reencontro, o usuário pode iniciar uma consulta pelo nome ou por características e refinar os resultados usando os filtros disponíveis. Os resultados representam casos fictícios utilizados na demonstração acadêmica.",
+    "fonte": "Documentação do projeto Reencontro",
+    "url": null,
+    "tipo": "documentacao_do_produto"
+  },
+  {
+    "id": "produto_003",
+    "titulo": "Busca por foto",
+    "texto": "A busca por foto do protótipo apresenta uma comparação visual demonstrativa. Uma semelhança entre imagens não confirma a identidade de uma pessoa. A análise de uma possível correspondência exige revisão humana.",
+    "fonte": "Documentação do projeto Reencontro",
+    "url": null,
+    "tipo": "documentacao_do_produto"
+  },
+  {
+    "id": "produto_004",
+    "titulo": "Envio de informações adicionais",
+    "texto": "O usuário pode abrir uma ficha e escrever uma informação adicional para encaminhamento à fila de revisão humana. No protótipo acadêmico, esse fluxo é simulado e deve utilizar informações fictícias.",
+    "fonte": "Documentação do projeto Reencontro",
+    "url": null,
+    "tipo": "documentacao_do_produto"
+  },
+  {
+    "id": "produto_005",
+    "titulo": "Limites das informações disponíveis",
+    "texto": "A base demonstrativa não contém localização atual verificada, resultados de investigação ou confirmação de reencontro dos casos fictícios. Quando a pergunta exigir essas informações, o assistente deve informar que elas não constam na base.",
+    "fonte": "Documentação do projeto Reencontro",
+    "url": null,
+    "tipo": "documentacao_do_produto"
+  }
+]

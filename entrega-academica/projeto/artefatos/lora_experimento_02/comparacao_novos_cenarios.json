@@ -1,0 +1,98 @@
+[
+  {
+    "id": "novo_001",
+    "contexto": "[novo_001] Não é necessário criar uma conta para consultar o catálogo.",
+    "pergunta": "Preciso criar uma conta para consultar o catálogo?",
+    "gabarito": "Não é necessário criar uma conta para consultar o catálogo. [novo_001]",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.8993273000232875,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "Não é necessário criar uma conta para consultar o catálogo. [novo_001]",
+      "segundos": 2.878393799997866,
+      "tokens_gerados": 22
+    }
+  },
+  {
+    "id": "novo_002",
+    "contexto": "[novo_002] É necessário reservar um horário para utilizar o laboratório.",
+    "pergunta": "Preciso reservar um horário para usar o laboratório?",
+    "gabarito": "É necessário reservar um horário para utilizar o laboratório. [novo_002]",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.5564521999913268,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "É necessário reservar um horário para utilizar o laboratório. [novo_002]",
+      "segundos": 2.894835699989926,
+      "tokens_gerados": 22
+    }
+  },
+  {
+    "id": "novo_003",
+    "contexto": "[novo_003] A inscrição na atividade não garante o recebimento de certificado.",
+    "pergunta": "A inscrição garante que receberei um certificado?",
+    "gabarito": "A inscrição na atividade não garante o recebimento de certificado. [novo_003]",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.60852009995142,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "A inscrição na atividade não garante o recebimento de certificado. [novo_003]",
+      "segundos": 3.6237414999632165,
+      "tokens_gerados": 27
+    }
+  },
+  {
+    "id": "novo_004",
+    "contexto": "[novo_004] O museu oferece visitas guiadas durante a semana.",
+    "pergunta": "Qual é o preço da visita guiada?",
+    "gabarito": "Essa informação não consta na base disponível.",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.562268599984236,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.5831728000193834,
+      "tokens_gerados": 11
+    }
+  },
+  {
+    "id": "novo_005",
+    "contexto": "[novo_005] A solicitação foi recebida pelo setor responsável.",
+    "pergunta": "Em qual data a solicitação será concluída?",
+    "gabarito": "Essa informação não consta na base disponível.",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.5662226999993436,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.608354399970267,
+      "tokens_gerados": 11
+    }
+  },
+  {
+    "id": "novo_006",
+    "contexto": "[novo_006] O cadastro do equipamento contém a marca e o número de série.",
+    "pergunta": "Qual é a localização atual do equipamento?",
+    "gabarito": "Essa informação não consta na base disponível.",
+    "original_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.5902778999879956,
+      "tokens_gerados": 11
+    },
+    "lora_com_contexto": {
+      "resposta": "Essa informação não consta na base disponível.",
+      "segundos": 1.7467684000148438,
+      "tokens_gerados": 11
+    }
+  }
+]

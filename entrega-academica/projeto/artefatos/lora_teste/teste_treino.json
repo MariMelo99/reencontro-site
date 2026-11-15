@@ -1,0 +1,32 @@
+{
+  "modelo": "Qwen/Qwen3-0.6B",
+  "finalidade": "Teste técnico de treinamento, sem avaliação de qualidade",
+  "historico": [
+    {
+      "passo": 1,
+      "perda": 0.8217778205871582,
+      "segundos": 1.5294972999836318
+    },
+    {
+      "passo": 2,
+      "perda": 0.546007513999939,
+      "segundos": 1.2715602000243962
+    },
+    {
+      "passo": 3,
+      "perda": 0.22706036269664764,
+      "segundos": 1.3373928999644704
+    },
+    {
+      "passo": 4,
+      "perda": 1.6571086645126343,
+      "segundos": 1.2265848999959417
+    },
+    {
+      "passo": 5,
+      "perda": 0.1572650969028473,
+      "segundos": 1.246042300015688
+    }
+  ],
+  "tempo_total_segundos": 7.919257900037337
+}

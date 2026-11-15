@@ -1,0 +1,30 @@
+{
+  "escopo": "Conferência estática e reexecução das análises; sem novo treinamento ou geração.",
+  "notebooks": [
+    {
+      "notebook": "01_base_e_recuperacao.ipynb",
+      "celulas": 4,
+      "resultado": "aprovado"
+    },
+    {
+      "notebook": "02_treinamento_e_selecao.ipynb",
+      "celulas": 4,
+      "resultado": "aprovado"
+    },
+    {
+      "notebook": "03_placar_e_falhas.ipynb",
+      "celulas": 4,
+      "resultado": "aprovado"
+    }
+  ],
+  "casos_script_vs_avaliacao": "12/12 perguntas, IDs, fontes e gabaritos conferidos",
+  "originais": "Códigos, pesos, dados e resultados preservados. Quatro cópias idênticas de tokenizer.json omitidas; manifesto ajustado somente para os arquivos omitidos.",
+  "integridade_original": "verificar_entrega.py aprovado antes do empacotamento",
+  "ressalvas": [
+    "Revisão assistida por IA exige conferência da autora.",
+    "Versões locais originais e versões da hospedagem diferem.",
+    "Não há garantia de reprodução bit a bit sem revisão fixa do modelo e ambiente.",
+    "Avaliação de 12 perguntas não demonstra generalização ampla."
+  ],
+  "empacotamento": "Ver projeto/docs/EMPACOTAMENTO_LEVE.md"
+}

@@ -1,0 +1,32 @@
+
+TESTE: Entrada gratuita
+
+Determinística:
+Sim, é necessário comprar ingresso para entrar na exposição.
+
+Amostragem sugerida:
+Sim, é necessário comprar ingresso para entrar na exposição.
+
+TESTE: Serviço indisponível
+
+Determinística:
+A biblioteca não abre aos domingos.
+
+Amostragem sugerida:
+A biblioteca não abre aos domingos.
+
+TESTE: Informação ausente
+
+Determinística:
+NÃO CONSTA.
+
+Amostragem sugerida:
+NÃO CONSTA.
+
+TESTE: Extração literal
+
+Determinística:
+Documento: Não é necessário esperar 24 horas para comunicar o desaparecimento.
+
+Amostragem sugerida:
+Documento: Não é necessário esperar 24 horas para comunicar o desaparecimento.

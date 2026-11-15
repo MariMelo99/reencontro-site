@@ -1,0 +1,32 @@
+{
+  "modelo": "Qwen/Qwen3-0.6B",
+  "semente": 42,
+  "epocas": 3,
+  "taxa_aprendizado": 0.0002,
+  "exemplos_treino": 28,
+  "exemplos_validacao": 4,
+  "perda_validacao_inicial": 0.4727086541724616,
+  "melhor_epoca": 3,
+  "melhor_perda_validacao": 0.002076481968256773,
+  "historico": [
+    {
+      "epoca": 1,
+      "perda_treino": 0.1383268620519538,
+      "perda_validacao": 0.006456253326554173,
+      "segundos": 39.21800190000795
+    },
+    {
+      "epoca": 2,
+      "perda_treino": 0.00214995595694887,
+      "perda_validacao": 0.0023040376721022264,
+      "segundos": 40.848779599997215
+    },
+    {
+      "epoca": 3,
+      "perda_treino": 0.0004143898833317174,
+      "perda_validacao": 0.002076481968256773,
+      "segundos": 38.00025209999876
+    }
+  ],
+  "tempo_total_segundos": 118.07653530000243
+}
