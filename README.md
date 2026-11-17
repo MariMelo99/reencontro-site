@@ -169,6 +169,34 @@ Os arquivos `avaliacao/avaliacao_congelada_20261114_160302_507373.json` e `avali
 
 O notebook 03 mostra fabricação de informação no baseline e conteúdo adicional sem suporte no LoRA + RAG, inclusive um caso aceito pelo validador formal. Consulte o relatório técnico para os exemplos e limites. Os notebooks analisam logs e avaliações; não executam treinamento ou uma nova geração. A pasta completa inclui os scripts de treinamento, calibração e avaliação, os datasets, os logs e os adaptadores. As 12 perguntas do avaliador foram conferidas contra o registro congelado. O relatório Word original está em `entrega-academica/projeto/docs/Relatorio_Reencontro_LLM_Consolidado.docx`; ele foi preservado e deve ser lido junto das notas atualizadas sobre hospedagem.
 
+## Evidências de funcionamento do assistente
+
+### Resposta fundamentada com fonte
+
+Na consulta sobre o SINAL DESAPARECIDOS, o assistente informou
+que a comunicação pelo serviço não dispensa o registro de
+ocorrência na polícia judiciária. A resposta apresentou o
+trecho utilizado e o link para a fonte original.
+
+![Resposta fundamentada com fonte](evidencias/resposta-com-fonte.png)
+
+### Recusa por informação ausente
+
+Ao perguntar pelo telefone da equipe do Reencontro, o assistente
+respondeu que a informação não consta na base disponível,
+sem inventar um contato.
+
+![Recusa por informação ausente](evidencias/recusa-informacao-ausente.png)
+
+Essas capturas registram dois exemplos de funcionamento.
+Não demonstram acerto em todas as consultas nem substituem
+a avaliação dos erros reais.
+
+### Cinco erros reais e propostas de correção
+
+A análise das falhas e das propostas de correção está disponível
+na seção [Cinco erros e evolução](entrega-academica/projeto/README.md#cinco-erros-e-evolução)
+e no relatório técnico do projeto.
 ## Dados e privacidade
 
 Use apenas dados fictícios na demonstração. As consultas ao assistente são enviadas ao serviço Hugging Face. Os protocolos da interface ficam no armazenamento local do navegador; não representam um cadastro compartilhado ou atendimento real. Os trechos de orientação oficial devem ser conferidos nas fontes originais antes de uso fora do contexto acadêmico.
